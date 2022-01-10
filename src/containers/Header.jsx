@@ -1,10 +1,12 @@
 import * as React from 'react'
-import Navbar from '@components/Navbar'
+import Navbar     from '@components/Navbar'
+import Logo       from '@components/Logo'
+import '@styles/header.scss'
 
 const Header = () => {
     return (
-        <header>
-            <img src="#" alt="" />
+        <header className='header'>
+            <Logo />
             <Navbar />
         </header>
     )
