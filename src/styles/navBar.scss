@@ -1,0 +1,34 @@
+
+
+.navBar {
+    &__button {
+        border: none;
+        margin-right: 1rem;
+        background-color: transparent;
+    }
+    
+}
+
+/*---------- List of links ----------*/
+
+.navBar {
+    &__list {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        left: 0;
+        transform: translateX(100%);
+        transition: transform .3s ease;
+    }
+
+    &__links {
+        padding: 1rem 0;
+    }
+}
+
+/*---------- List of links hidden ----------*/
+
+
+#navBar__hidden {
+    transform: translateX(0%);
+}
