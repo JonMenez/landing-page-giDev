@@ -13,13 +13,13 @@ const Navbar = () => {
 
     return (
         <nav className='navBar'>
-        <button onClick={handleClick} className='navBar__button'><img className='navBar__button-img' src={ active ? closeButton : navButton } alt='navigation button' /></button>
           <ul className='navBar__list' id={active ? 'navBar__hidden' : '' }>
               <li className='navBar__items'><a className='navBar__links' href="#">Home</a></li>
               <li className='navBar__items'><a className='navBar__links' href="#">Services</a></li>
               <li className='navBar__items'><a className='navBar__links' href="#">Projects</a></li>
               <li className='navBar__items'><a className='navBar__links' href="#">Contact</a></li>
           </ul> 
+        <button onClick={handleClick} className='navBar__button'><img className='navBar__button-img' src={ active ? closeButton : navButton } alt='navigation button' /></button>
         </nav>
     )
 }
