@@ -4,4 +4,12 @@
 /*----------  Feedback Section ----------*/
 .feedback {
     height: 100vh;
+
+    &__title {
+        width: 300px;
+        color: $primary;
+        margin: auto;
+        text-align: center;
+        padding: 2rem 0 ;
+    }
 }
