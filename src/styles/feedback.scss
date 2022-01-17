@@ -1,9 +1,14 @@
 @import 'vars';
 @import 'mixins';
 
+:root{
+    --swiper-theme-color: $primary;
+    // --swiper-pagination-color: $primary;
+}
+
 /*----------  Feedback Section ----------*/
 .feedback {
-    height: 100vh;
+    height: 80vh;
 
     &__title {
         width: 300px;
@@ -12,4 +17,12 @@
         text-align: center;
         padding: 2rem 0 ;
     }
+}
+
+.swiper-button-prev:after, .swiper-button-next:after  {
+    display: none;
+}
+
+.swiper-pagination-bullet-active {
+    --swiper-theme-color: #00668B;
 }
