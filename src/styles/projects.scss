@@ -1,0 +1,38 @@
+@import 'vars';
+@import 'mixins';
+
+/*----------  Projects Section ----------*/
+ .projects {
+     background-color: $primary;
+
+     &__wave {
+         width: 100%;
+         background-color: #fff;
+         border: none;
+     }
+
+     &__title {
+         color: #fff;
+         text-align: center;
+         padding-bottom: 3rem;
+     }
+
+     &__slider {
+         width: 100%;
+         display: flex;
+         gap: 1rem;
+         padding-left: 1rem;
+         overflow-x: scroll;
+         overflow-y: hidden;
+         scroll-snap-type: x mandatory;
+     }
+
+     &__more {
+         color: #fff;
+         padding: 1.5rem;
+         padding-bottom: 0;
+         font-weight: 300;
+         text-align: right;
+         text-decoration: underline;
+     }
+ }

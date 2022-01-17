@@ -1,0 +1,37 @@
+@import 'vars';
+@import 'mixins';
+
+.projects {
+    &__card {
+        width: 100%;
+        flex: 1 0 200px;
+        background-color: $grey-950;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__name{
+        font-size: 1rem;
+        font-weight: 500;
+        padding:  {
+            top: .3rem;
+            left: 1rem;
+            bottom: .3rem
+        };
+    }
+
+    &__body {
+        font-size: .8rem;
+        font-weight: 400;
+        color: $grey-600;
+        padding: {
+            top: 0;
+            bottom: 1rem;
+            left: 1rem;
+        }
+    }
+}
