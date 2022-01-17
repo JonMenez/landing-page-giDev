@@ -7,11 +7,9 @@ import '@styles/projects.scss'
 const Projects = () => {
     return (
         <section className='projects'>
-            <img className='projects__wave' src={ wave1 } alt="svg wave" />
+            <img className='projects__wave1' src={ wave1 } alt="svg wave" />
             <h2 className='projects__title'>My lastest Projects</h2>
             <div className='projects__slider'>
-              <CardProject />
-              <CardProject />
               <CardProject />
               <CardProject />
             </div>
