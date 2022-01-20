@@ -3,7 +3,6 @@
 
 :root{
     --swiper-theme-color: $primary;
-    // --swiper-pagination-color: $primary;
 }
 
 /*----------  Feedback Section ----------*/
@@ -19,9 +18,13 @@
     }
 }
 
+/*---------- pagination arrows ----------*/
+
 .swiper-button-prev:after, .swiper-button-next:after  {
     display: none;
 }
+
+/*---------- pagination bullets ----------*/
 
 .swiper-pagination-bullet-active {
     --swiper-theme-color: #00668B;
