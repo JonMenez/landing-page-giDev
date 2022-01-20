@@ -1,0 +1,12 @@
+@import 'vars';
+
+.cta__button {
+    flex: 0 0 auto;
+    font-size: 1rem;
+    color: #fff;
+    background-color: $error;
+    padding: .5rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
