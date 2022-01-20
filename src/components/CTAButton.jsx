@@ -1,9 +1,9 @@
 import * as React from 'react';
 import '@styles/ctaButton.scss'
 
-const CTAButton = () => {
+const CTAButton = (props) => {
   return (
-       <button className='cta__button'>
+       <button className={ props.class }>
            Contact Me
        </button>
   )

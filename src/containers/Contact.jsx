@@ -6,7 +6,7 @@ const Contact = () => {
   return (
          <section className='contact'>
              <h3 className='contact__title'>Let's talk about your project!</h3>
-             <CTAButton />
+             <CTAButton class='cta__button' />
          </section>
   )
 };
