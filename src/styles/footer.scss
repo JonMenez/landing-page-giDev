@@ -1,0 +1,28 @@
+@import 'vars';
+@import 'mixins';
+
+/*---------- Footer section ----------*/
+
+.footer {
+    padding: 1rem;
+
+    /*---------- Hey! text ----------*/
+    &__title {
+        font-size: 1.5rem;
+        margin-bottom: .3rem;
+        font-weight: 500;
+    }
+    
+    /*---------- name text ----------*/
+    &__name {
+        font-weight: 600;
+     }
+
+    /*---------- Footer text ----------*/
+    &__text {
+        font-weight: 200;
+        margin-bottom: .5rem;
+        line-height: 1.4;
+    }
+
+}
