@@ -5,6 +5,7 @@ import Services   from '@containers/Services'
 import Projects   from '@containers/Projects'
 import Feedback   from '@containers/Feedback'
 import Contact    from '@containers/Contact'
+import Footer     from './Footer'
 import '@styles/app.scss'
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
             <Projects />
             <Feedback />
             <Contact />
+            <Footer />
         </div>
     )
 }
