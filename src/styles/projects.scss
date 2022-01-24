@@ -7,9 +7,18 @@
      margin-bottom: 3rem;
 
      &__wave1 {
+         width: 100%;
         position: relative;
         top: 10px;
      }
+
+     &__wave2 {
+        width: 100%;
+       position: relative;
+       top: -2px;
+    }
+
+     
 
      &__title {
          color: #fff;
@@ -21,12 +30,10 @@
      &__slider {
          width: 100%;
          display: flex;
-         gap: 1rem;
-         padding-left: 1rem;
          overflow-x: scroll;
          overflow-y: hidden;
-         scroll-snap-type: x mandatory;
          background-color: $primary;
+         padding-left: 1rem;
      }
 
      &__more {
