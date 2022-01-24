@@ -14,7 +14,7 @@ const Projects = () => {
               <CardProject />
             </div>
             <a href='#' className="projects__more">See all</a>
-            <img className='projects__wave' src={ wave2 } alt="svg wave" />
+            <img className='projects__wave2' src={ wave2 } alt="svg wave" />
         </section>
     )
 }
