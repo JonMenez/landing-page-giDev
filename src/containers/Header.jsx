@@ -16,8 +16,17 @@ const Header = () => {
     return (
         <header className='header'>
             <Logo />
-            <Navbar active={active ? 'navBar__hidden' : '' }/>
-            <button onClick={handleClick} className='navBar__button'><img className='navBar__button-img' src={ active ? closeButton : navButton } alt='navigation button' /></button>
+            <Navbar 
+              navBar='navBar__list' 
+              navList='navBar__items' 
+              navLinks='navBar__links' 
+              active={active ? 'navBar__hidden' : '' }
+              />
+            <button 
+              onClick={handleClick} 
+              className='navBar__button'>
+                  <img className='navBar__button-img' src={ active ? closeButton : navButton } alt='navigation button' />
+            </button>
         </header>
     )
 }
