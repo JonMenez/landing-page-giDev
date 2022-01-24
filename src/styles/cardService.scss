@@ -5,6 +5,8 @@
 
 .services {
 
+    /*---------- Card ----------*/
+
     &__card {
         width: 85%;
         background-color: $primary;
@@ -21,10 +23,14 @@
         
     }
 
+    /*---------- Card icons ----------*/
+
     &__icon {
         margin-bottom: .5rem;
         filter: invert(100%);
     }
+
+    /*---------- Card names ----------*/
 
     &__name {
         font-size: 1.1rem;
@@ -33,6 +39,8 @@
         margin-bottom: .8rem;
     }
 
+    /*---------- Card text ----------*/
+ 
     &__body {
         font-weight: 100;
         font-size: .8rem;

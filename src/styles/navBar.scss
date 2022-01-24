@@ -1,6 +1,8 @@
 @import 'vars';
 @import 'mixins';
 
+/*---------- Button on mobile version ----------*/
+
 .navBar {
     &__button {
         border: none;
@@ -11,9 +13,11 @@
     
 }
 
-/*---------- List of links ----------*/
+/*---------- List of navigation links ----------*/
 
 .navBar {
+
+    /*---------- List of items/ li elements ----------*/
     
     &__list {
         position: absolute;
@@ -29,6 +33,8 @@
         background-color: $primary;
 
     }
+
+    /*---------- List of links/ a elements ----------*/
 
     &__links {
         padding: {
@@ -47,4 +53,22 @@
 #navBar__hidden {
     left: 0;
     opacity: 1;
+}
+
+
+/*---------- List of navigation links FOOTER ----------*/
+
+.footer {
+
+      /*---------- List of items/ li elements ----------*/
+      &__list {
+       padding: .5rem 0;
+
+    }
+
+    /*---------- List of links/ a elements ----------*/
+    &__links {
+       padding: .7rem 0;
+
+    }
 }
