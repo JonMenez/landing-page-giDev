@@ -3,18 +3,21 @@
 
 .contact {
     display: flex;
-    height: 12em;
+    height: 15em;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url('@images/contact-banner.jpeg');
+    background-image: linear-gradient(90.09deg, #00668B 28.84%, rgba(0, 102, 139, 0.6) 45.29%, rgba(0, 102, 139, 0.6) 49.5%), url('@images/contact-banner.jpeg') ;
+    background-image: linear-gradient(90deg, #00668B 18.84%,  rgba(0, 102, 139, 0.6) 89.5%), url('@images/contact-banner.jpeg') ;
+    opacity: .9;
     background-repeat: no-repeat;
     background-size: cover;
 
     &__title {
-        width: min(50%, 500px);
+        font-size: 1.5rem;
+        width: min(55%, 500px);
         color: #fff;
         text-align: center;
-        padding-bottom: 1rem;
+        padding-bottom: 1.5rem;
     }
 }
