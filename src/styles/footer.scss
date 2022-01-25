@@ -25,4 +25,24 @@
         line-height: 1.4;
     }
 
+    /*---------- CopyRight ----------*/
+
+    &__copyright {
+        text-align: center;
+        padding: 2rem;
+    }
+
+    /*---------- CopyRight text ----------*/
+    &__rights {
+        color: $grey-700;
+        font-weight: 100;
+    }
+
+    /*---------- CopyRight icon ----------*/
+    &__copyrightIcon {
+        display: inline-block;
+        width: 1rem;
+        vertical-align: -3px;
+    }
+
 }

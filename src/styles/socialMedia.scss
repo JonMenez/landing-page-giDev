@@ -1,0 +1,33 @@
+@import 'vars';
+@import 'mixins';
+
+/*---------- SocialMedia section ----------*/
+
+.footer {
+    /*---------- Container ----------*/
+    &__social {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    /*---------- Title ----------*/
+    &__socialTitle {
+        display: none;
+    }
+
+    /*---------- Links ----------*/
+    &__socialLink {
+        padding: .3rem;
+    }
+
+    /*---------- Icons ----------*/
+    &__socialIcon {
+        width: 1.8rem;
+        margin-inline: .3rem;
+    }
+
+    /*---------- User Name ----------*/
+    &__socialUser {
+        display: none;
+    }
+}
