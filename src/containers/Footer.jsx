@@ -1,6 +1,6 @@
 import * as React      from 'react';
 import Navbar          from '@components/Navbar'
-import SocialMediaList from '@components/SocialMediaList';
+import SocialMedia     from '@components/SocialMedia';
 import CopyRightIcon   from "@icons/copyRight.svg"
 import "@styles/navBar.scss"
 import '@styles/footer.scss'
@@ -19,10 +19,9 @@ const Footer = () => {
             navList='footer__items' 
             navLinks='footer__links' 
             />
-            <SocialMediaList/>
+            <SocialMedia />
             <div className="footer__copyright">
-                <p className="footer__develop">designed & developed <span>CADI</span></p>
-                <p className="footer__develop rights"><img className="copyrightIcon" src={ CopyRightIcon } alt="copyright icon" /> { currentYear() }  All Rights Reserved.</p>
+                <p className="footer__rights"><img className="footer__copyrightIcon" src={ CopyRightIcon } alt="copyright icon" /> { currentYear() }  All Rights Reserved.</p>
             </div>
          </section>
     );
