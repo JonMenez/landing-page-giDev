@@ -8,7 +8,7 @@ const FeedCard = () => {
             <div className="feedback__img">
                 <img src={ clientImg } alt='client photo' />
             </div>
-            <div className="feedback_info">
+            <div className="feedback__info">
                 <p className="feedback__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat tortor, pellentesque ipsum. In gravida ornare nec a nulla ac tortor a.</p>
                 <h4 className="feedback__name">Carlton Reeves <span>CEO at PRcompany</span></h4>
             </div>
