@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Layout from '@containers/Layout'
-import Home   from '@containers/Home'
+import Home   from '@pages/Home'
 import '@styles/app.scss'
 
 const App = () => {
