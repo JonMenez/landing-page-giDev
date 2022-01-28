@@ -10,7 +10,7 @@ const Navbar = (props) => {
               <li className={props.navList}><Link className={props.navLinks} to="/">Home</Link></li>
               <li className={props.navList}><Link className={props.navLinks} to="#">Services</Link></li>
               <li className={props.navList}><Link className={props.navLinks} to="/projects">Projects</Link></li>
-              <li className={props.navList}><Link className={props.navLinks} to="form">Contact</Link></li>
+              <li className={props.navList}><Link className={props.navLinks} to="/contact">Contact</Link></li>
           </ul> 
         </nav>
     )
