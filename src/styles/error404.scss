@@ -23,14 +23,12 @@
 
     &__button {
         border: none;
-    }
-
-    &__backHome {
         color: #fff;
         background-color: $grey-200;
         padding: .5rem 1.25rem;
         border-radius: 8px;
     }
+
 }
 
 #error404__slider {
