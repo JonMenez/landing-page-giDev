@@ -4,7 +4,7 @@ import Slider from '@components/Slider'
 const ProjectsPage = () => {
   return (
       <section>
-          <h1>List of projects</h1>
+          <h1>Projects</h1>
       </section>
   );
 };
