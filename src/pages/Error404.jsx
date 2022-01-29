@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useNavigate }   from 'react-router-dom'
+import { Link, useNavigate }   from 'react-router-dom'
 import Slider     from '@components/Slider';
 import Button     from '@components/Button';
 import '@styles/error404.scss'
@@ -23,6 +23,7 @@ const Error404 = () => {
           <Slider 
           idStyle='error404__slider'
           />
+          <Link to='/projects' className='error404__link'>See All</Link>
       </section>
   );
 };
