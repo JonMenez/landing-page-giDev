@@ -3,8 +3,9 @@
 
 .projects {
     &__card {
-        width: 100%;
-        flex: 1 0 200px;
+        width: 50%;
+        flex-grow: 0;
+        flex-shrink: 0;
         background-color: $grey-950;
         border-radius: 12px;
         overflow: hidden;
