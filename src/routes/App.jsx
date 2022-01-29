@@ -8,6 +8,7 @@ import Home         from '@pages/Home'
 import Error404     from '@pages/Error404'
 import ProjectsPage from '@pages/ProjectsPage'
 import Form         from '@pages/Form'
+import ProjectDetail from '../pages/ProjectDetail'
 import ScrollToTop  from '@services/ScrollToTop'
 import '@styles/app.scss'
 
@@ -22,7 +23,7 @@ const App = () => {
                 <Routes>
                   <Route path='/' element={ <Home/> } />
                   <Route path='/projects' element={ <ProjectsPage/> } />
-                  <Route path='/projects/*' element={ <ProjectsPage/> } />
+                  <Route path='/projects/*' element={ <ProjectDetail/> } />
                   <Route path='/contact' element={ <Form /> } />
                   <Route path='*' element={ <Error404/> } />
                 </Routes>
