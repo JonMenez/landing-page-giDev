@@ -1,7 +1,12 @@
 @import 'vars';
 @import 'mixins';
 
+/*---------- Card Project ----------*/
+
 .projects {
+
+    /*---------- Card container ----------*/
+
     &__card {
         width: 50%;
         flex-grow: 0;
@@ -12,12 +17,16 @@
         margin-left: .8rem;
     }
 
+    /*---------- Card image ----------*/
+
     &__img {
         width: 100%;
     }
 
+    /*---------- Card title ----------*/
+
     &__name{
-        font-size: 1rem;
+        font-size: $fz1;
         font-weight: 500;
         padding:  {
             top: .3rem;
@@ -26,8 +35,10 @@
         };
     }
 
+    /*---------- Card text ----------*/
+
     &__body {
-        font-size: .8rem;
+        font-size: $fz0;
         font-weight: 400;
         line-height: 1.4;
         color: $grey-600;

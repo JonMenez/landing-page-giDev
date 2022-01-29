@@ -6,6 +6,7 @@
 .services {
     margin-bottom: 8em;
     &__title {
+        font-size: $fz4;
         color: $primary;
         text-align: center;
         padding: {

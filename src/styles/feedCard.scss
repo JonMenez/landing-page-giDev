@@ -36,14 +36,14 @@
     &__body {
         width: 90%;
         margin: auto;
-        font-size: .9rem;
+        font-size: $fz1;
         line-height: 1.4;
         font-weight: 300;
     } 
 
     &__name {
         color: $primary;
-        font-size: .8rem;
+        font-size: $fz0;
         text-align: right;
         font-weight: 300;
         margin-top: 1rem;

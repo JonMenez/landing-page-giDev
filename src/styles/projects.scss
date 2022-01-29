@@ -6,34 +6,43 @@
      background-color: #fff;
      margin-bottom: 3rem;
 
+     /*---------- Top wave shape ----------*/
+
      &__wave1 {
-         width: 100%;
+        width: 100%;
         position: relative;
         top: 10px;
      }
 
+     /*---------- Bottom wave shape----------*/
+
      &__wave2 {
-        width: 100%;
+       width: 100%;
        position: relative;
        top: -2px;
     }
 
+    /*---------- Projects section title ----------*/
+
      &__title {
-         color: #fff;
+         font-size: $fz4;
          text-align: center;
-         padding-bottom: 3rem;
+         color: #fff;
          background-color: $primary;
+         padding-bottom: 3rem;
      }
 
+     /*---------- "See All" text ----------*/
 
      &__more {
-         color: #fff;
-         padding: 1.5rem;
-         padding-bottom: 0;
+         font-size: $fz2;
          font-weight: 300;
          text-align: right;
          text-decoration: underline;
+         color: #fff;
          background-color: $primary;
+         padding: 1.5rem;
+         padding-bottom: 0;
      }
  }
 

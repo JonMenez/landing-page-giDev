@@ -1,24 +1,33 @@
 @import 'vars';
+@import 'mixins';
+
+/*---------- Hero Section ----------*/
 
 .hero {
     &__title {
-        font-size: 2rem;
+        font-size: $fz5;
         margin: {
             top: 1.5rem;
             left: 1rem;
         };
+
+        /*---------- name title ----------*/
 
         span {
             display: block;
         }
     }
 
+    /*---------- Hero text ----------*/
+
     &__body {
         color: $grey-300;
         font-weight: 200;
-        font-size: .8rem;
+        font-size: $fz1;
         width: 80%;
         padding: .5rem 1rem;
         word-spacing: .5px;
     }
 }
+
+/*---------- Table Beackpoint ----------*/
