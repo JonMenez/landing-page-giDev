@@ -21,3 +21,12 @@ $grey-300 : #454749;
 $grey-200 : #2E3133;
 $grey-100 : #191C1E;
 $black    : #000;
+
+  $fz-2: clamp(0.52rem, 0.47rem + 0.23vw, 0.64rem);
+  $fz-1: clamp(0.63rem, 0.56rem + 0.34vw, 0.80rem);
+  $fz0: clamp(0.75rem, 0.65rem + 0.49vw, 1.00rem);
+  $fz1: clamp(0.90rem, 0.76rem + 0.68vw, 1.25rem);
+  $fz2: clamp(1.08rem, 0.89rem + 0.94vw, 1.56rem);
+  $fz3: clamp(1.30rem, 1.04rem + 1.28vw, 1.95rem);
+  $fz4: clamp(1.56rem, 1.21rem + 1.73vw, 2.44rem);
+  $fz5: clamp(1.87rem, 1.40rem + 2.31vw, 3.05rem);
