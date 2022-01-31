@@ -17,7 +17,13 @@ const Feedback = () => {
          slidesPerView={1}
          tag="div"
          navigation
-         pagination={{ clickable: true }} 
+         pagination={{ clickable: true }}
+        //  breakpoints= {{
+        //     765: {
+        //       slidesPerView: 2,
+        //       spaceBetween: 5,
+        //     }}
+        // }
            >
             <SwiperSlide><FeedCard/></SwiperSlide>
             <SwiperSlide><FeedCard/></SwiperSlide>
