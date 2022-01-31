@@ -48,3 +48,16 @@
         line-height: 1.4;
     }
 }
+
+/*-------------------- Table Beackpoint --------------------*/
+
+.services {
+
+    /*---------- Card ----------*/
+
+    &__card {
+        width: 40%;
+        flex: 1 0 auto;
+        margin: 1rem;
+    }
+}

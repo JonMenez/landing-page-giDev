@@ -10,7 +10,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: linear-gradient(90.09deg, #00668B 28.84%, rgba(0, 102, 139, 0.6) 45.29%, rgba(0, 102, 139, 0.6) 49.5%), url('@images/contact-banner.jpeg') ;
     background-image: linear-gradient(90deg, #00668B 18.84%,  rgba(0, 102, 139, 0.6) 89.5%), url('@images/contact-banner.jpeg') ;
     opacity: .9;
     background-repeat: no-repeat;
@@ -37,5 +36,21 @@
         border: none;
         border-radius: 8px;
         cursor: pointer;
+    }
+}
+
+/*-------------------- Table Beackpoint --------------------*/
+
+@include md {
+    .contact {
+        height: 25em;
+        background-image: linear-gradient(90.09deg, #00668B 28.84%), url('@images/contact-banner.jpeg') ;
+
+        /*---------- Paragraph ----------*/
+    
+        &__title {
+            font-size: $fz4;
+            width: 300px;
+        }
     }
 }

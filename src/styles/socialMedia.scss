@@ -31,3 +31,40 @@
         display: none;
     }
 }
+
+/*-------------------- Table Breakpoint --------------------*/
+
+@include md {
+    .footer {
+
+        /*---------- Social Media Container ----------*/
+        &__social {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 1.5rem;
+        }
+        /*---------- Title ----------*/
+        &__socialTitle {
+            display: none;
+        }
+    
+        /*---------- Links ----------*/
+        &__socialLink {
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+    
+        /*---------- Icons ----------*/
+        &__socialIcon {
+            width: 1.8rem;
+            margin-inline: .5rem;
+        }
+    
+        /*---------- User Name ----------*/
+        &__socialUser {
+            display: inline-block;
+        }
+    }
+}

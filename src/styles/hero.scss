@@ -4,6 +4,7 @@
 /*---------- Hero Section ----------*/
 
 .hero {
+
     &__title {
         font-size: $fz5;
         margin: {
@@ -24,10 +25,38 @@
         color: $grey-300;
         font-weight: 200;
         font-size: $fz1;
-        width: 80%;
-        padding: .5rem 1rem;
+        width: 70%;
+        margin: .5rem 1rem;
         word-spacing: .5px;
+    }
+
+    &__button {
+        display: none;
     }
 }
 
-/*---------- Table Beackpoint ----------*/
+/*-------------------- Table Breakpoint --------------------*/
+
+@include md {
+
+    .hero {
+        margin-left: 3rem;
+    
+
+        &__button {
+            display: inline-block;
+            font-size: $fz1;
+            color: #fff;
+            background-color: $error;
+            padding: .5rem 2rem;
+            margin: {
+                top: 1.5rem;
+                left: 2rem;
+            };
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+}
+
+}

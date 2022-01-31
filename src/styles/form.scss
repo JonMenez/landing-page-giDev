@@ -85,3 +85,30 @@
         border-radius: 8px;
     }
 }
+
+/*-------------------- Table Breakpoint --------------------*/
+
+@include md {
+   
+    /*---------- Form Page ----------*/
+
+      .form {
+          text-align: right;
+          width: 80%;
+          margin-top: 1rem;
+          margin-inline: auto;
+
+          /*---------- Form title ----------*/
+
+           &__title {
+               text-align: left;
+               margin: {
+                   bottom: 2rem;
+                   left: 4rem
+               };
+           }
+      }
+
+      
+}
+

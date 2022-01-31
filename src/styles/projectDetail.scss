@@ -1,4 +1,5 @@
 @import 'vars';
+@import 'mixins';
 
 /*----------  Project Detail Page ----------*/
 
@@ -8,7 +9,7 @@
     /*----------  Top image ----------*/
 
     &__img {
-
+      
       
     }
 
@@ -35,4 +36,24 @@
         width: 90%;
         margin-inline: auto;
     }
+}
+
+@include md {
+    /*----------  Project Detail Page ----------*/
+
+.projectDetail {
+    width: 100%;
+
+    /*----------  Top image ----------*/
+
+    &__img {
+      
+        img {
+            height: 20em;
+            object-fit: cover;
+        }
+
+    }
+
+}
 }

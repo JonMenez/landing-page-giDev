@@ -15,3 +15,19 @@
         };
     }
 }
+
+/*-------------------- Table Breakpoint --------------------*/
+
+@include md {
+    .services {
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-inline: auto;
+
+        &__title {
+            width: 100%;
+        }
+    }
+}

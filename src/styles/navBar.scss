@@ -31,7 +31,6 @@
         transition: all .2s ease;
         z-index: 3;
         opacity: 0;
-
     }
 
     /*---------- List of links/ a elements ----------*/
@@ -71,5 +70,59 @@
     &__links {
        padding: .7rem 0;
 
+    }
+}
+
+
+/*------------------------------------- Tablet breakpoint -------------------------------------*/
+@include md {
+    .navBar {
+
+        /*---------- Button on mobile version ----------*/
+    
+        &__button {
+            display: none;
+        }
+    
+        /*---------- List of items/ li elements ----------*/
+        
+        &__list {
+            display: flex;
+            width: auto;
+            position: static;
+            background-color: transparent;
+            padding: 0;
+            margin-right: 2rem;
+            opacity: 1;
+            z-index: 0;
+        }
+    
+        /*---------- List of links/ a elements ----------*/
+    
+        &__links {
+            flex-shrink: 0;
+            flex-grow: 0;
+            background-color: transparent;
+            color: #000;
+            font-size: $fz1;
+            padding: {
+                top: 2rem;
+                left: 1rem;
+                right: 2rem;
+            };
+    
+        }
+
+        /*---------- Hoem link ----------*/
+
+        &__home {
+            display: none;
+        }
+
+        /*---------- Contact me link ----------*/
+
+        &__contactMe {
+            display: none;
+        }
     }
 }

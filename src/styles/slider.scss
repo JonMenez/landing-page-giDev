@@ -1,4 +1,4 @@
-
+@import 'mixins';
 
 .slider {
     width: 100%;
@@ -7,4 +7,13 @@
     overflow-y: hidden;
     padding-left: 1rem;
     text-align: left;
+}
+
+/*-------------------- Table Breakpoint --------------------*/
+
+@include md {
+    .slider {
+        padding-left: 0;
+        justify-content: center;
+    }
 }

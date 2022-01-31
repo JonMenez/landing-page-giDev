@@ -49,3 +49,18 @@
         }
     }
 }
+
+/*-------------------- Table Breakpoint --------------------*/
+
+@include md {
+    .projects {
+
+        /*---------- Card container ----------*/
+    
+        &__card {
+            width: 45%;
+            margin-left: 0;
+            margin: 1rem;
+        }
+    }
+}

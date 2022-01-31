@@ -55,3 +55,13 @@
         }
     }
 }
+
+/*-------------------- Table Breakpoint --------------------*/
+
+@include md {
+    .feedback {
+        &__card {
+            width: 350px;
+        }
+    }
+}

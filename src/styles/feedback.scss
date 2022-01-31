@@ -30,3 +30,21 @@
 .swiper-pagination-bullet-active {
     --swiper-theme-color: #00668B;
 }
+
+
+/*-------------------- Table Breakpoint --------------------*/
+
+@include md {
+    .feedback {
+        margin-bottom: 2rem;
+    
+        &__title {
+            font-size: $fz4;
+            width: 500px;
+            color: $primary;
+            margin: auto;
+            text-align: center;
+            padding: 2rem 0 ;
+        }
+    }
+}

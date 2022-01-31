@@ -26,6 +26,18 @@
         line-height: 1.4;
     }
 
+      /*---------- List of items/ li elements ----------*/
+      &__list {
+        padding: .5rem 0;
+ 
+     }
+ 
+     /*---------- List of links/ a elements ----------*/
+     &__links {
+        font-size: $fz1;
+        padding: .7rem 0;
+     }
+
     /*---------- CopyRight ----------*/
 
     &__copyright {
@@ -35,6 +47,7 @@
 
     /*---------- CopyRight text ----------*/
     &__rights {
+        font-size: $fz1;
         color: $grey-700;
         font-weight: 100;
     }
@@ -46,4 +59,77 @@
         vertical-align: -3px;
     }
 
+}
+
+/*-------------------- Table Breakpoint --------------------*/
+
+@include md {
+    /*---------- Footer section ----------*/
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+
+    /*---------- About container ----------*/
+    &__about {
+        width: 50%;
+    }
+
+    /*---------- Hey! text ----------*/
+    &__title {
+        font-size: $fz3;
+        margin-bottom: .3rem;
+        font-weight: 500;
+    }
+    
+    /*---------- name text ----------*/
+    &__name {
+        font-weight: 600;
+     }
+
+    /*---------- Footer text ----------*/
+    &__text {
+        font-size: $fz1;
+        font-weight: 200;
+        margin-bottom: .5rem;
+        line-height: 1.4;
+    }
+
+      /*---------- List of items/ li elements ----------*/
+      &__list {
+        padding: .5rem 0;
+ 
+     }
+ 
+     /*---------- List of links/ a elements ----------*/
+     &__links {
+        font-size: $fz1;
+        padding: .7rem 0;
+     }
+
+    /*---------- CopyRight ----------*/
+
+    &__copyright {
+        text-align: center;
+        padding: 2rem;
+    }
+
+    /*---------- CopyRight text ----------*/
+    &__rights {
+        font-size: $fz1;
+        color: $grey-700;
+        font-weight: 100;
+    }
+
+    /*---------- CopyRight icon ----------*/
+    &__copyrightIcon {
+        display: inline-block;
+        width: 1rem;
+        vertical-align: -3px;
+    }
+
+}
 }
