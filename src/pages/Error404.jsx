@@ -20,10 +20,10 @@ const Error404 = () => {
             click={backToHome} 
             />
           <p className="error404__text">Or you can have a look at some of my projects</p>
-          <Slider 
-          idStyle='error404__slider'
-          />
-          <Link to='/projects' className='error404__link'>See All</Link>
+          <div className="error404__projects">  
+            <Slider  />
+            <Link to='/projects' className='error404__link'>See All</Link>
+          </div>
       </section>
   );
 };
