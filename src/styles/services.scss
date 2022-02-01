@@ -5,6 +5,7 @@
 /*---------- Services title ----------*/
 .services {
     margin-bottom: 8em;
+
     &__title {
         font-size: $fz4;
         color: $primary;
@@ -22,12 +23,24 @@
     .services {
         width: 95%;
         display: flex;
-        justify-content: center;
         flex-wrap: wrap;
+        justify-content: center;
         margin-inline: auto;
 
         &__title {
             width: 100%;
         }
     }
+}
+
+/*-------------------- Desktop Breakpoint --------------------*/
+
+@include lg {
+    .services {
+        width: 90%;
+        max-width: 1300px;
+        margin-top: 3rem;
+        // text-align: center;
+    }
+
 }

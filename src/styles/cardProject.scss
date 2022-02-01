@@ -64,3 +64,15 @@
         }
     }
 }
+
+/*-------------------- Desktop Breakpoint --------------------*/
+@include lg {
+    .projects {
+
+        /*---------- Card container ----------*/
+    
+        &__card {
+            width: 45%;
+        }
+    }
+}

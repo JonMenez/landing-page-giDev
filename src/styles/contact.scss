@@ -54,3 +54,18 @@
         }
     }
 }
+
+/*-------------------- Desktop Breakpoint --------------------*/
+
+@include lg {
+    .contact {
+        height: 35em;
+        
+        /*---------- Paragraph ----------*/
+    
+        &__title {
+            font-size: $fz4;
+            width: 500px;
+        }
+    }
+}

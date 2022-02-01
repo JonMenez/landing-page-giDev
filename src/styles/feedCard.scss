@@ -65,3 +65,25 @@
         }
     }
 }
+
+/*-------------------- Desktop Breakpoint --------------------*/
+
+@include lg {
+    .feedback {
+        &__card {
+            width: 350px;
+        }
+
+        /*---------- Card text ----------*/
+    &__body {
+        font-size: $fz0;
+
+    } 
+
+    &__name {
+        font-size: $fz-1;
+    }
+    }
+
+    
+}

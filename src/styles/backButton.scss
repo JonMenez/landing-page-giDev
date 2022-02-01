@@ -1,4 +1,4 @@
-
+@import 'mixins';
 /*---------- Back button icon ----------*/
 .backButton {
     width: 2rem;
@@ -11,4 +11,12 @@
         width: 100%;
     }
     
+}
+
+/*-------------------- Desktop Breakpoint --------------------*/
+
+@include lg {
+    .backButton{
+        display: none;
+    }
 }

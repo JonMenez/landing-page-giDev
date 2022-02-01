@@ -93,7 +93,6 @@
     /*---------- Form Page ----------*/
 
       .form {
-          text-align: right;
           width: 80%;
           margin-top: 1rem;
           margin-inline: auto;
@@ -101,14 +100,50 @@
           /*---------- Form title ----------*/
 
            &__title {
-               text-align: left;
-               margin: {
-                   bottom: 2rem;
-                   left: 4rem
-               };
+               text-align: center;
+               font-size: $fz4;
            }
       }
 
       
 }
 
+
+/*-------------------- Desktop Breakpoint --------------------*/
+
+@include lg {
+    /*---------- Form Page ----------*/
+
+.form {
+    width: 50%;
+    max-width: 900px;
+
+    /*----------  Labes ----------*/
+
+    &__label {
+        font-size: $fz0;
+    }
+
+    /*----------  Inputs ----------*/
+
+    &__input {
+        font-size: $fz1;
+
+        &::placeholder {
+            font-size: $fz0;
+          }
+    }
+
+    /*----------  Textarea ----------*/
+
+    &__textarea {
+        font-size: $fz0;
+    }
+
+    /*----------  Submit button ----------*/
+
+    &__submit {
+        font-size: $fz0;
+    }
+}
+}

@@ -6,13 +6,6 @@
 .projectDetail {
     width: 100%;
 
-    /*----------  Top image ----------*/
-
-    &__img {
-      
-      
-    }
-
     /*----------  Main title ----------*/
 
     &__title {
@@ -30,13 +23,16 @@
         margin: 2rem auto;
     }
 
-    /*----------  image between paragraph ----------*/
+    /*----------  image between paragraphs ----------*/
 
     &__img2 {
         width: 90%;
         margin-inline: auto;
     }
 }
+
+
+/*-------------------- Tablet Breakpoint --------------------*/
 
 @include md {
     /*----------  Project Detail Page ----------*/
@@ -55,5 +51,52 @@
 
     }
 
+    /*----------  Paragraph ----------*/
+
+    &__text {
+        width: 70%;
+    }
+
+    /*----------  image between paragraphs ----------*/
+
+    &__img2 {
+        width: 70%;
+    }
+  }
+}
+
+/*-------------------- Desktop Breakpoint --------------------*/
+
+@include lg {
+    /*----------  Project Detail Page ----------*/
+
+.projectDetail {
+    width: 100%;
+
+    /*----------  Main title ----------*/
+
+    &__title {
+        font-size: $fz4;
+        text-align: center;
+        margin: 1rem auto;
+    }
+
+    /*----------  Paragraph ----------*/
+
+    &__text {
+        width: 50%;
+        max-width: 900px;
+        font-size: $fz0;
+        font-weight: 200;
+        margin: 2rem auto;
+    }
+
+    /*----------  image between paragraphs ----------*/
+
+    &__img2 {
+        width: 50%;
+        max-width: 900px;
+        margin-inline: auto;
+    }
 }
 }

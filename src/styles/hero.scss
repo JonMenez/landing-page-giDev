@@ -60,3 +60,18 @@
 }
 
 }
+
+/*-------------------- Desktop Breakpoint --------------------*/
+
+@include lg {
+    .hero__button {
+        transition: all .3s;
+    
+       &:hover {
+           color: $error;
+           background-color: transparent;
+           outline: 1px $error solid;
+
+       }
+    }
+}

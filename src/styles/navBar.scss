@@ -56,23 +56,6 @@
 }
 
 
-/*---------- List of navigation links FOOTER ----------*/
-
-.footer {
-
-      /*---------- List of items/ li elements ----------*/
-      &__list {
-       padding: .5rem 0;
-
-    }
-
-    /*---------- List of links/ a elements ----------*/
-    &__links {
-       padding: .7rem 0;
-
-    }
-}
-
 
 /*------------------------------------- Tablet breakpoint -------------------------------------*/
 @include md {
@@ -102,15 +85,33 @@
         &__links {
             flex-shrink: 0;
             flex-grow: 0;
-            background-color: transparent;
             color: #000;
-            font-size: $fz1;
+            background-color: transparent;
+            font-size: $fz0;
+            font-weight: 600;
             padding: {
-                top: 2rem;
+                top: 1rem;
                 left: 1rem;
                 right: 2rem;
             };
-    
+
+            /*---------- Underscore (invisible) ----------*/
+
+            &::after {
+                content: '';
+                display: block;
+                height: 3px;
+                background-color: #000;
+
+                transition: transform 0.2s ease;
+                transform: scale(0);
+            }
+
+            /*---------- Uderscore appear----------*/
+
+            &:hover::after {
+                transform: scale(1);
+            }
         }
 
         /*---------- Hoem link ----------*/
@@ -123,6 +124,31 @@
 
         &__contactMe {
             display: none;
+        }
+    }
+}
+
+/*-------------------- Desktop Breakpoint --------------------*/
+
+@include lg {
+    .navBar__links {
+
+        /*---------- Underscore (invisible) ----------*/
+
+        &::after {
+            content: '';
+            display: block;
+            height: 3px;
+            background-color: #000;
+
+            transition: transform 0.2s ease;
+            transform: scale(0);
+        }
+
+        /*---------- Uderscore appear----------*/
+
+        &:hover::after {
+            transform: scale(1);
         }
     }
 }

@@ -51,13 +51,31 @@
 
 /*-------------------- Table Beackpoint --------------------*/
 
-.services {
+@include md {
+    .services {
 
-    /*---------- Card ----------*/
-
-    &__card {
-        width: 40%;
-        flex: 1 0 auto;
-        margin: 1rem;
+        /*---------- Card ----------*/
+    
+        &__card {
+            width: 40%;
+            flex: 0 0 auto;
+            margin: 1rem;
+        }
     }
 }
+
+/*-------------------- Desktop Breakpoint --------------------*/
+
+@include lg {
+    .services {
+
+        /*---------- Card ----------*/
+    
+        &__card {
+            width: 20%;
+            margin: .5rem;
+            // flex-grow: ;
+        }
+    }
+}
+
