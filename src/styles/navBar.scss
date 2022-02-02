@@ -26,12 +26,12 @@
         background-color: $white;
         background-color: $primary;
         width: 100vw;
-        padding: 1rem;
         text-align: center;
         transition: all .2s ease;
         z-index: 3;
         opacity: 0;
     }
+
 
     /*---------- List of links/ a elements ----------*/
 
@@ -47,6 +47,10 @@
     }
 }
 
+.active {
+    background-color: darken($primary, 8%);
+}
+
 /*---------- List of links hidden ----------*/
 
 
@@ -57,7 +61,7 @@
 
 
 
-/*------------------------------------- Tablet breakpoint -------------------------------------*/
+/*--------------------------- Tablet breakpoint ---------------------------*/
 @include md {
     .navBar {
 
@@ -75,7 +79,11 @@
             position: static;
             background-color: transparent;
             padding: 0;
-            margin-right: 2rem;
+            padding: {
+                top: 1rem;
+                bottom: 1rem;
+                right: 2rem;
+            };
             opacity: 1;
             z-index: 0;
         }
@@ -85,32 +93,15 @@
         &__links {
             flex-shrink: 0;
             flex-grow: 0;
-            color: #000;
+            color: $grey-600;
             background-color: transparent;
             font-size: $fz0;
-            font-weight: 600;
-            padding: {
-                top: 1rem;
-                left: 1rem;
-                right: 2rem;
-            };
+            font-weight: 400;
+            padding: .5rem 1rem;
 
-            /*---------- Underscore (invisible) ----------*/
-
-            &::after {
-                content: '';
-                display: block;
-                height: 3px;
-                background-color: #000;
-
-                transition: transform 0.2s ease;
-                transform: scale(0);
-            }
-
-            /*---------- Uderscore appear----------*/
-
-            &:hover::after {
-                transform: scale(1);
+            &:hover {
+                color: $primary;
+                font-weight: 500;
             }
         }
 
@@ -126,9 +117,16 @@
             display: none;
         }
     }
+
+    .active {
+        color: $primary;
+        font-weight: 600;
+        border: solid $primary 1px;
+        border-radius: 8px;
+    }
 }
 
-/*-------------------- Desktop Breakpoint --------------------*/
+/*--------------------------- Desktop breakpoint ---------------------------*/
 
 @include lg {
     .navBar__links {
@@ -148,7 +146,7 @@
         /*---------- Uderscore appear----------*/
 
         &:hover::after {
-            transform: scale(1);
+            // transform: scale(1);
         }
     }
 }
