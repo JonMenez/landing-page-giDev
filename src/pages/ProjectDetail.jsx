@@ -7,7 +7,8 @@ import '@styles/projectDetail.scss'
 const ProjectDetail = () => {
   return (
       <section className='projectDetail'>
-        <BackButton/>
+        <BackButton 
+        style={{filter: 'invert(100%)'}}/>
           <div className="projectDetail__img">
             <img src={ projectImg } alt='Project image reference' />
           </div>
