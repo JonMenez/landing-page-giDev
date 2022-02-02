@@ -48,7 +48,8 @@
      background-color: $primary;
  }
 
-/*-------------------- Desktop Breakpoint --------------------*/
+/*--------------------------- Desktop breakpoint ---------------------------*/
+
 @include lg {
     .projects {
         background-color: $primary;
