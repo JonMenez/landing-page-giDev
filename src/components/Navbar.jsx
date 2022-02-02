@@ -1,16 +1,18 @@
 import * as React  from 'react';
-import { Link }    from 'react-router-dom'
+import { NavLink }    from 'react-router-dom'
 import '@styles/navBar.scss'
 
 const Navbar = (props) => {
 
+    const isActive = (navData) => navData.isActive ? "active" : ""
+
     return (
         <nav className='navBar'>
-          <ul className={props.navBar} id={props.active}>
-              <li className={props.navList}><Link className={`${props.navLinks} navBar__home`} to="/">Home</Link></li>
-              <li className={props.navList}><Link className={props.navLinks} to="#">Services</Link></li>
-              <li className={props.navList}><Link className={props.navLinks} to="/projects">Projects</Link></li>
-              <li className={props.navList}><Link className={`${props.navLinks} navBar__contactMe`} to="/contact">Contact Me</Link></li>
+          <ul className='navBar__list' id={props.active}>
+              <li className='navBar__items'><NavLink className={`navBar__links ${isActive}`} to="/">Home</NavLink></li>
+              <li className='navBar__items'><a       className={`navBar__links ${isActive}`} href="#services">Services</a></li>
+              <li className='navBar__items'><NavLink className={`navBar__links ${isActive}`} to="/projects">Projects</NavLink></li>
+              <li className='navBar__items'><NavLink className={`navBar__links ${isActive}`} to="/contact">Contact Me</NavLink></li>
           </ul> 
         </nav>
     )
