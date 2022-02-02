@@ -17,9 +17,6 @@ const Header = () => {
         <header className='header'>
             <Logo />
             <Navbar 
-              navBar='navBar__list' 
-              navList='navBar__items' 
-              navLinks='navBar__links' 
               active={active ? 'navBar__hidden' : '' }
               />
             <button 
