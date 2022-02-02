@@ -9,6 +9,7 @@
 
     &__card {
         width: 85%;
+        max-width: 300px;
         background-color: $primary;
         color: #fff;
         text-align: center;
@@ -20,7 +21,6 @@
             right: auto;
         };
         border-radius: 8px;
-        
     }
 
     /*---------- Card icons ----------*/
@@ -49,7 +49,7 @@
     }
 }
 
-/*-------------------- Table Beackpoint --------------------*/
+/*--------------------------- Tablet breakpoint ---------------------------*/
 
 @include md {
     .services {
@@ -64,7 +64,7 @@
     }
 }
 
-/*-------------------- Desktop Breakpoint --------------------*/
+/*--------------------------- Desktop breakpoint ---------------------------*/
 
 @include lg {
     .services {
