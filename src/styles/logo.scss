@@ -1,7 +1,15 @@
+@import 'mixins'; 
 
 /*---------- Logo ----------*/
 
 .logo {
     margin-left: 1rem;
-   
+}
+
+/*--------------------------- Tablet breakpoint ---------------------------*/
+
+@include md {
+    .logo {
+        margin-left: 2rem;
+    }
 }
