@@ -23,6 +23,10 @@
     /*---------- Icons ----------*/
     &__socialIcon {
         width: 1.8rem;
+        margin: {
+            left: .3rem;
+            right: .3rem;
+        };
         margin-inline: .3rem;
     }
 
@@ -59,6 +63,10 @@
         /*---------- Icons ----------*/
         &__socialIcon {
             width: 1.8rem;
+            margin: {
+                left: .5rem;
+                right: .5rem;
+            };
             margin-inline: .5rem;
         }
     

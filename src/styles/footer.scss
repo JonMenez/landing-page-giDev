@@ -79,7 +79,6 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 1rem;
-    margin-top: 3em;
 
     /*---------- About container ----------*/
     &__about {
@@ -134,7 +133,6 @@
 
     /*---------- Footer text ----------*/
     &__text {
-        // font-size: $fz0;
         font-weight: 200;
         margin-bottom: .5rem;
         line-height: 1.4;
@@ -167,6 +165,10 @@
 
     &__copyright {
         width: 100%;
+        margin: {
+            left: auto;
+            right: auto;
+        };
         margin-inline: auto;
     }
   }

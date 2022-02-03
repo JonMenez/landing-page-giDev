@@ -27,6 +27,10 @@
 
     &__img2 {
         width: 90%;
+        margin: {
+            left: auto;
+            right: auto;
+        };
         margin-inline: auto;
     }
 }
@@ -96,7 +100,6 @@
     &__img2 {
         width: 50%;
         max-width: 900px;
-        margin-inline: auto;
     }
 }
 }

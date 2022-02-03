@@ -73,6 +73,10 @@
 
        &__container {
           width: 80%;
+          margin: {
+            left: auto;
+            right: auto;
+        };
           margin-inline: auto;
        }
    
