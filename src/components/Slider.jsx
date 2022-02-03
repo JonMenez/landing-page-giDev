@@ -7,6 +7,8 @@ const Slider = (props) => {
     <div className='slider' id={props.idStyle}>
     <CardProject />
     <CardProject />
+    <CardProject />
+    <CardProject />
     </div>
   )
 };
