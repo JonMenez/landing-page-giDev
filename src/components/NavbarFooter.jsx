@@ -8,9 +8,9 @@ const NavbarFooter = (props) => {
         <nav className='footer__navBar'>
           <ul className='footer__list'>
               <li className='footer__item'><Link className='footer__links' to="/">Home</Link></li>
-              <li className='footer__item'><Link className='footer__links' to="#">Services</Link></li>
+              <li className='footer__item'><Link className='footer__links' to="/services">Services</Link></li>
               <li className='footer__item'><Link className='footer__links' to="/projects">Projects</Link></li>
-              <li className='footer__item'><Link className='footer__links' to="/contact">Contact Me</Link></li>
+              <li className='footer__item'><Link className='footer__links' to="/contact">Contact</Link></li>
           </ul> 
         </nav>
     )
