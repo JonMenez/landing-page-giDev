@@ -8,7 +8,10 @@ const ProjectDetail = () => {
   return (
       <section className='projectDetail'>
         <BackButton 
-        style={{filter: 'invert(100%)'}}/>
+        style={{
+            filter: 'invert(100%)',
+            marginTop: '.5rem'
+            }}/>
           <div className="projectDetail__img">
             <img src={ projectImg } alt='Project image reference' />
           </div>

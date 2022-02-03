@@ -6,12 +6,19 @@
     left: 1rem;
     background-color: transparent;
     border: none;
-    margin-top: .5rem;
 
     &__icon {
         width: 100%;
     }
     
+}
+
+/*--------------------------- Tablet breakpoint ---------------------------*/
+
+@include md {
+    .backButton{
+        margin-top: .5rem;
+    }
 }
 
 /*--------------------------- Desktop breakpoint ---------------------------*/
