@@ -8,11 +8,11 @@ const Navbar = (props) => {
 
     return (
         <nav className='navBar'>
-          <ul className='navBar__list' id={props.active}>
+          <ul className='navBar__list' onClick={props.onClick} id={props.active}>
               <li className='navBar__items'><NavLink className={`navBar__links ${isActive}`} to="/">Home</NavLink></li>
-              <li className='navBar__items'><a       className={`navBar__links ${isActive}`} href="#services">Services</a></li>
+              <li className='navBar__items'><NavLink className={`navBar__links ${isActive}`} to="/services">Services</NavLink></li>
               <li className='navBar__items'><NavLink className={`navBar__links ${isActive}`} to="/projects">Projects</NavLink></li>
-              <li className='navBar__items'><NavLink className={`navBar__links ${isActive}`} to="/contact">Contact Me</NavLink></li>
+              <li className='navBar__items'><NavLink className={`navBar__links ${isActive}`} to="/contact">Contact</NavLink></li>
           </ul> 
         </nav>
     )
