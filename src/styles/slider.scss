@@ -5,8 +5,13 @@
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
-    padding-left: 1rem;
+    padding-left: 2rem;
     text-align: left;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 /*--------------------------- Tablet breakpoint ---------------------------*/
@@ -15,6 +20,21 @@
     .slider {
         padding-left: 0;
         justify-content: center;
-        overflow: visible;
+        overflow: hidden;
+    }
+}
+
+@include lg {
+    .slider {
+        width: 80%;
+        max-width: 1200px;
+        padding-left: 0;
+        justify-content: center;
+        overflow: hidden;
+        margin: {
+            left: auto;
+            right: auto;
+        };
+
     }
 }
