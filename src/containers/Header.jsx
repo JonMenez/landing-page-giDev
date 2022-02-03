@@ -10,7 +10,7 @@ const Header = () => {
     const [active, setActive] = React.useState(false)
 
     const handleClick = () => {
-        setActive(!active)
+        setTimeout(setActive(!active), 5000)
     }
 
     return (
@@ -18,6 +18,7 @@ const Header = () => {
             <Logo />
             <Navbar 
               active={active ? 'navBar__hidden' : '' }
+              onClick={handleClick}
               />
             <button 
               onClick={handleClick} 
