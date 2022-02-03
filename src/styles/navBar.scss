@@ -27,9 +27,8 @@
         background-color: $primary;
         width: 100vw;
         text-align: center;
-        transition: all .2s ease;
+        transition: all .3s ease;
         z-index: 3;
-        opacity: 0;
     }
 
 
@@ -56,7 +55,7 @@
 
 #navBar__hidden {
     left: 0;
-    opacity: 1;
+    // opacity: 1;
 }
 
 
