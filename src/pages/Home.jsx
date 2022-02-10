@@ -8,13 +8,19 @@ import Contact    from '@containers/Contact'
 
 const pageVariant = {
   hidden: {
-    x: 100,
+    y: 100,
     opacity: 0
   },
   visible: {
-    x: 0,
+    y: 0,
     opacity: 1,
-    transition: { duration: .8, delay: .5, ease: 'easeInOut' }
+    transition: { 
+      duration: .8, 
+      delay: .5, 
+      ease: 'easeInOut',
+      delayChildren: 0.5,
+      staggerChildren: 1
+     }
     },
     exit: {
       x: -100,
