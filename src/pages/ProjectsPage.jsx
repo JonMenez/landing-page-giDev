@@ -7,22 +7,20 @@ import '@styles/projectsPage.scss'
 
 const pageVariant = {
   hidden: {
-    y: 100,
+    x: 100,
     opacity: 0
   },
   visible: {
-    y: 0,
+    x: 0,
     opacity: 1,
-    transition: {
-      duration: .5,
-      delay: .3
+    transition: { duration: .5, delay: .3 }
     },
     exit: {
-      y: -100,
+      x: 100,
       opacity: 0
     }
   }
-}
+
 
 const ProjectsPage = () => {
   return (

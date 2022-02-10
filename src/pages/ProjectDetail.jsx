@@ -1,12 +1,36 @@
-import React from 'react';
-import BackButton    from '@components/BackButton';
-import projectImg from '@images/project.jpeg'
+import * as React     from 'react';
+import { motion }     from 'framer-motion';
+import BackButton     from '@components/BackButton';
+import projectImg     from '@images/project.jpeg'
 import projectPageImg from '@images/project-page.jpeg'
 import '@styles/projectDetail.scss'
 
+const pageVariant = {
+  hidden: {
+    x: -100,
+    opacity: 0
+  },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: { duration: .5, delay: .3 }
+    },
+    exit: {
+      x: 100,
+      opacity: 0
+    }
+  }
+  
+
 const ProjectDetail = () => {
   return (
-      <section className='projectDetail'>
+      <motion.section 
+        className='projectDetail'
+        variants={pageVariant}
+        initial='hidden'
+        animate='visible'
+        exit='exit'
+      >
         <BackButton 
         style={{
             filter: 'invert(100%)',
@@ -21,7 +45,7 @@ const ProjectDetail = () => {
             <img src={ projectPageImg } alt='Project image reference' />
           </div>
           <p className="projectDetail__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates vel quo aut, tempore pariatur labore at assumenda natus dolore?</p>
-      </section>
+      </motion.section>
   )
 };
 
