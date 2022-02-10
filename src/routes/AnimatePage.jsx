@@ -16,7 +16,7 @@ const AnimatePage = () => {
 
     return (
         <>
-            <AnimatePresence exitBeforeEnter initial={false}>
+            <AnimatePresence exitBeforeEnter>
             <ScrollToTop/>
             <Routes  location={ location } key={ location.key } >
               <Route path='/' element={ <Layout /> }>
