@@ -1,12 +1,38 @@
 import * as React  from 'react';
+import { motion }  from 'framer-motion'
 import BackButton  from '@components/BackButton';
 import CardProject from '@components/CardProject'
 import '@styles/slider.scss'
 import '@styles/projectsPage.scss'
 
+const pageVariant = {
+  hidden: {
+    y: 100,
+    opacity: 0
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: .5,
+      delay: .3
+    },
+    exit: {
+      y: -100,
+      opacity: 0
+    }
+  }
+}
+
 const ProjectsPage = () => {
   return (
-      <section className='projectsPage'>
+      <motion.section 
+        className='projectsPage'
+        variants={pageVariant}
+        initial='hidden'
+        animate='visible'
+        exit='exit'
+      >
         <BackButton/>
           <h1 className='projectsPage__title'>Projects</h1>
           <div className='projectsPage__container'>
@@ -14,7 +40,7 @@ const ProjectsPage = () => {
             <CardProject class={'projectsPage__card'}/>
             <CardProject class={'projectsPage__card'}/>
           </div>
-      </section>
+      </motion.section>
   );
 };
 
