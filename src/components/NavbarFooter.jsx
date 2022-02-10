@@ -2,7 +2,7 @@ import * as React  from 'react';
 import { Link }    from 'react-router-dom'
 import '@styles/navBar.scss'
 
-const NavbarFooter = (props) => {
+const NavbarFooter = () => {
 
     return (
         <nav className='footer__navBar'>
