@@ -14,7 +14,7 @@ const pageVariant = {
   visible: {
     x: 0,
     opacity: 1,
-    transition: { duration: .5, delay: .3 }
+    transition: { duration: .8, delay: .5, ease: 'easeInOut' }
     },
     exit: {
       x: -100,
