@@ -22,11 +22,12 @@
     &__list {
         position: absolute;
         top: 100%;
-        left: -100%;
-        background-color: $white;
+        left: 0;
+        width: 100%;
         background-color: $primary;
         width: 100vw;
         text-align: center;
+        transform: translateX(-100vw);
         transition: all .3s ease;
         z-index: 3;
     }
@@ -54,8 +55,7 @@
 
 
 #navBar__hidden {
-    left: 0;
-    // opacity: 1;
+    transform: translateX(0);
 }
 
 
@@ -85,6 +85,7 @@
             };
             opacity: 1;
             z-index: 0;
+            transform: translateX(0);
         }
     
         /*---------- List of links/ a elements ----------*/
@@ -92,7 +93,7 @@
         &__links {
             flex-shrink: 0;
             flex-grow: 0;
-            color: $grey-600;
+            color: $grey-400;
             background-color: transparent;
             font-size: $fz0;
             font-weight: 400;
