@@ -9,9 +9,7 @@ const Header = () => {
 
     const [active, setActive] = React.useState(false)
 
-    const handleClick = () => {
-        setTimeout(setActive(!active), 5000)
-    }
+    const handleClick = () => setActive(!active)
 
     return (
         <header className='header'>
