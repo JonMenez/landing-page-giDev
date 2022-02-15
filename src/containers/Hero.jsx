@@ -1,8 +1,8 @@
 import * as React      from 'react'
-import { motion } from 'framer-motion'
+import { motion }      from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
-import Button from '@components/Button'
-import PersonImg from '@images/person.png'
+import Button          from '@components/Button'
+import PersonImg       from '@images/person.png'
 import '@styles/hero.scss'
 
 const textVariant = {
@@ -13,7 +13,11 @@ const textVariant = {
     visible: {
         x: 0,
         opacity: 1,
-        transition: { delay: 1, type: "tween", duration: 1}
+        transition: { 
+            delay: 1, 
+            type: "tween", 
+            duration: 1
+        }
     }
 }
 
@@ -36,9 +40,7 @@ const Hero = () => {
   const toContact = () => navigate('/contact')
 
     return (
-        <motion.section 
-        
-        >
+        <section className='hero'>
             <motion.h1 
               className='hero__title' 
               variants={textVariant}
@@ -49,9 +51,9 @@ const Hero = () => {
             >I'm a Front-end Web Developer who is gonna help you with your business</motion.p>
             <Button class='hero__button' name="Contact Me" click={toContact} />
             <motion.div className="hero__img" variants={bannerVariant}>
-              <motion.img src={PersonImg} alt="person img"  />
+              <motion.img src={PersonImg} alt="person imgage"  />
             </motion.div>
-        </motion.section>
+        </section>
     )
 }
 
