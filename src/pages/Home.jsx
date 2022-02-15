@@ -18,8 +18,8 @@ const pageVariant = {
       duration: .8, 
       delay: .5, 
       ease: 'easeInOut',
-      delayChildren: 0.5,
-      staggerChildren: 1
+      delayChildren: 5,
+      staggerChildren: 5
      }
     },
     exit: {

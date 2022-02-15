@@ -22,17 +22,16 @@
 @include md {
     .services {
         width: 95%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
         margin: {
             left: auto;
             right: auto;
         };
         margin-inline: auto;
 
-        &__title {
-            width: 100%;
+        &__container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
     }
 }
