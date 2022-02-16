@@ -17,7 +17,7 @@ const pageVariant = {
   exit: {
     x: "100vw",
     opacity: 0,
-    transition: { duration: 0.5, ease: "easeInOut" },
+    transition: { duration: 0.8, ease: "easeInOut" },
   },
 };
 
