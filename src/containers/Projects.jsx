@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import useView from "../hooks/useView";
+import useView from "@hooks/useView";
 import wave1 from "@icons/p1-wave.svg";
 import wave2 from "@icons/p2-wave.svg";
 import Slider from "@components/Slider";
